@@ -32,7 +32,7 @@
 ## Запуск
 
 1. Склонируйте репозиторий:
-   git clone https://github.com/ТВОЙ_ЛОГИН/unit-economics-calculator.git
+   git clone https://github.com/azatikson/unit-economics-calculator.git
 
 2. Откройте `index.html` через Live Server или в браузере.
 
