@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор юнит-экономики</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <div class="sidebar-controls">
+                <div class="theme-toggle">
+                    <span class="theme-icon">🌙</span>
+                    <label class="switch">
+                        <input type="checkbox" id="theme-toggle-sidebar">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Свернуть сайдбар">☰</button>
+            </div>
+            <div class="logo">
+                <h1>Калькулятор юнит-экономики</h1>
+            </div>
+         
+            <button id="dictionary-toggle" class="sidebar-button">📘 Словарь</button>
+        </aside>
+
+        <main class="main-content">
+            <form id="unit-economics-form">
+                <div class="form-group">
+                    <label for="price">Цена (₽)</label>
+                    <input type="number" id="price" name="price" step="any" min="0" required placeholder="Например, 99">
+                </div>
+                <div class="form-group">
+                    <label for="cogs">Переменные затраты на пользователя (₽)</label>
+                    <input type="number" id="cogs" name="cogs" step="any" min="0" required placeholder="Например, 5">
+                </div>
+                <div class="form-group">
+                    <label for="churn">Месячный отток (%)</label>
+                    <input type="number" id="churn" name="churn" step="any" min="0" max="100" required placeholder="Например, 50">
+                </div>
+                <div class="form-group">
+                    <label for="cac">Стоимость привлечения (₽)</label>
+                    <input type="number" id="cac" name="cac" step="any" min="0" required placeholder="Например, 20">
+                </div>
+                <div class="form-group">
+                    <label for="conversion">Конверсия в платящего (%)</label>
+                    <input type="number" id="conversion" name="conversion" step="any" min="0" max="100" required placeholder="Например, 2">
+                </div>
+                <div class="button-wrapper">
+                    <button type="submit">Рассчитать</button>
+                </div>
+            </form>
+
+            <div id="results" style="display: none;"></div>
+        </main>
+    </div>
+
+    
+    <div class="sidebar-open-controls">
+        <div class="theme-toggle">
+            <span class="theme-icon">🌙</span>
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle-open">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <button id="sidebar-open" class="sidebar-open" aria-label="Развернуть сайдбар">☰</button>
+    </div>
+
+  
+    <div id="dictionary-modal" class="modal">
+        <div class="modal-content">
+            <button id="dictionary-close" class="modal-close" aria-label="Закрыть">×</button>
+            <h2>Словарь терминов</h2>
+            <div class="dictionary-item">
+                <h3>LTV (Lifetime Value)</h3>
+                <p>Пожизненная ценность клиента — сколько прибыли приносит клиент за всё время взаимодействия с продуктом.</p>
+            </div>
+            <div class="dictionary-item">
+                <h3>CAC (Customer Acquisition Cost)</h3>
+                <p>Стоимость привлечения одного клиента — сколько денег тратится на маркетинг и продажи для привлечения одного платящего пользователя.</p>
+            </div>
+            <div class="dictionary-item">
+                <h3>Маржа (Gross Margin)</h3>
+                <p>Валовая маржа — процент от цены, который остаётся после вычета переменных затрат (COGS).</p>
+            </div>
+            <div class="dictionary-item">
+                <h3>Конверсия</h3>
+                <p>Процент пользователей, которые становятся платящими клиентами.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
