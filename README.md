@@ -2,6 +2,8 @@
 
 Интерактивный калькулятор для оценки юнит-экономики продукта или сервиса. Помогает быстро рассчитать LTV, CAC, маржу и соотношение LTV/CAC, а также получить вердикт о состоянии юнит-экономики.
 
+https://azatikson.github.io/unit-economics-calculator
+
 ### Видео-демонстрация
 
 [<video src="demo.mp4" controls width="800"></video>](https://github.com/user-attachments/assets/cbb488f7-b46f-4fb9-8c92-2af429747aa4)
